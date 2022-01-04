@@ -18,6 +18,7 @@
 		0C2231EB278407120008F673 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2231EA278407120008F673 /* RecipeCategoryGridView.swift */; };
 		0C2231ED27840AB30008F673 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2231EC27840AB30008F673 /* CategoryView.swift */; };
 		0C22320B278411F00008F673 /* ModifyRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22320A278411F00008F673 /* ModifyRecipeView.swift */; };
+		0CEE7F36278440DF003563F1 /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE7F35278440DF003563F1 /* ModifyMainInformationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		0C2231EA278407120008F673 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
 		0C2231EC27840AB30008F673 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		0C22320A278411F00008F673 /* ModifyRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRecipeView.swift; sourceTree = "<group>"; };
+		0CEE7F35278440DF003563F1 /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0C22320A278411F00008F673 /* ModifyRecipeView.swift */,
+				0CEE7F35278440DF003563F1 /* ModifyMainInformationView.swift */,
 			);
 			path = ModifyRecipes;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				0C2231AD2782EF8A0008F673 /* Recipe.swift in Sources */,
 				0C2231CD2782FBED0008F673 /* RecipeDetailView.swift in Sources */,
+				0CEE7F36278440DF003563F1 /* ModifyMainInformationView.swift in Sources */,
 				0C2231EB278407120008F673 /* RecipeCategoryGridView.swift in Sources */,
 				0C2231CB2782FAA20008F673 /* RecipeData.swift in Sources */,
 				0C22320B278411F00008F673 /* ModifyRecipeView.swift in Sources */,
