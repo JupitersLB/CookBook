@@ -24,7 +24,7 @@ struct ModifyMainInformationView: View {
                     .listRowBackground(listBackgroundColor)
             }
             Menu {
-                Picker("My Picker", selection: $mainInformation.category) {
+                Picker("Category", selection: $mainInformation.category) {
                     ForEach(MainInformation.Category.allCases, id: \.self) { category in
                         Text(category.rawValue)
                     }
