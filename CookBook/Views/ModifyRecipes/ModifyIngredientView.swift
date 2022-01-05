@@ -7,17 +7,16 @@
 
 import SwiftUI
 
-struct ModifyIngredientView: View {
+struct ModifyIngredientView: ModifyComponentView {
     @Binding var ingredient: Ingredient
     @Environment(\.presentationMode) private var mode
     
     let createAction: ((Ingredient) -> Void)
     
-    let formatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        return formatter
-    }()
+    init(component: Binding<Ingredient>, createAction: @escaping (Ingredient) -> Void) {
+        self._ingredient = component
+        self.createAction = createAction
+    }
     
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
@@ -32,7 +31,7 @@ struct ModifyIngredientView: View {
                         Text("Quantity:")
                         TextField("Quantity",
                                   value: $ingredient.quantity,
-                                  formatter: formatter
+                                  formatter: NumberFormatter.decimal
                         )
                             .keyboardType(.numbersAndPunctuation)
                     }
@@ -68,14 +67,21 @@ struct ModifyIngredientView: View {
     }
 }
 
+extension NumberFormatter {
+    static var decimal: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter
+    }
+}
+
 struct ModifyIngredientView_Previews: PreviewProvider {
-    @State static var emptyIngredient = Ingredient()
-    
+    @State static var recipe = Recipe.testRecipes[0]
     static var previews: some View {
         NavigationView {
-            ModifyIngredientView(ingredient: $emptyIngredient) { ingredient in
+           ModifyIngredientView(component: $recipe.ingredients[0]) { ingredient in
                 print(ingredient)
-            }
+            }.navigationTitle("Add Ingredient")
         }
     }
 }
