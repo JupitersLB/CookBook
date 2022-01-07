@@ -75,17 +75,20 @@ struct RecipeDetailView: View {
         .sheet(isPresented: $isPresenting) {
             NavigationView {
                 ModifyRecipeView(recipe: $recipe)
-                    .toolbar {
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Save") {
-                                isPresenting = false
-                                print("close modify screen")
-                                print("is presenting = \(isPresenting)")
-                            }
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("Save") {
+                            isPresenting = false
+                            print("close modify screen")
+                            print("is presenting = \(isPresenting)")
                         }
                     }
-                    .navigationTitle("Edit Recipe")
                 }
+                .navigationTitle("Edit Recipe")
+            }
+            .onDisappear {
+                recipeData.saveRecipes()
+            }
         }
     }
 }
