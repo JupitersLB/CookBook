@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeDetailView: View {
     @Binding var recipe: Recipe
+    @EnvironmentObject private var recipeData: RecipeData
     @State private var isPresenting = false
     
     private let listBackgroundColor = AppColor.background
@@ -55,8 +56,14 @@ struct RecipeDetailView: View {
                     Button("Edit") {
                         isPresenting = true
                     }
+                    Button(action: {
+                        recipe.isFavorite.toggle()
+                    }) {
+                        Image(systemName: recipe.isFavorite ? "heart.fill" : "heart")
+                    }
                 }
             }
+            ToolbarItem(placement: .navigationBarLeading) { Text("") }
         }
         .sheet(isPresented: $isPresenting) {
             NavigationView {
