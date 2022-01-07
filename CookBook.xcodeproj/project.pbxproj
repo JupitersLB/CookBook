@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C03911127851C6A0011AC24 /* ModifyDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C03911027851C6A0011AC24 /* ModifyDirectionView.swift */; };
+		0C09A5A02787CAC200A306B5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09A59F2787CAC200A306B5 /* SettingsView.swift */; };
 		0C22319E2782EF320008F673 /* CookBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22319D2782EF320008F673 /* CookBookApp.swift */; };
 		0C2231A02782EF320008F673 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22319F2782EF320008F673 /* RecipesListView.swift */; };
 		0C2231A22782EF330008F673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2231A12782EF330008F673 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0C03911027851C6A0011AC24 /* ModifyDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyDirectionView.swift; sourceTree = "<group>"; };
+		0C09A59F2787CAC200A306B5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0C22319A2782EF320008F673 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C22319D2782EF320008F673 /* CookBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookApp.swift; sourceTree = "<group>"; };
 		0C22319F2782EF320008F673 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				0C223209278411D00008F673 /* ModifyRecipes */,
 				0C223208278411BF0008F673 /* ExploreRecipes */,
 				0C4279192786724400DE0C3D /* MainTabView.swift */,
+				0C09A59F2787CAC200A306B5 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C09A5A02787CAC200A306B5 /* SettingsView.swift in Sources */,
 				0C2231AD2782EF8A0008F673 /* Recipe.swift in Sources */,
 				0C2231CD2782FBED0008F673 /* RecipeDetailView.swift in Sources */,
 				0CEE7F36278440DF003563F1 /* ModifyMainInformationView.swift in Sources */,
